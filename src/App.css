@@ -1,0 +1,25 @@
+.mainT,
+.create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+.fcontainer {
+  display: grid;
+  width: 30%;
+  margin-left: 35%;
+  line-height: 2;
+}
+.sub {
+  margin-top: 10px;
+  height: 30px;
+  border: none;
+}
+.table {
+  margin-top: 25px;
+}
+.btn {
+  margin-top: 10px;
+}
