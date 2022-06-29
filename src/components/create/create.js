@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 function Create() {
   const [fname, setFname] = useState("");
@@ -28,13 +29,13 @@ function Create() {
         name="lname"
         onChange={(e) => setLname(e.target.value)}
       ></input>
-      <button type="submit" className="sub" onClick={sendAPIdetails}>
+      <Button type="submit" className="sub" onClick={sendAPIdetails}>
         Submit
-      </button>
+      </Button>
       <Link to="/read">
-        <button className="btn btn-primary" type="submit">
+        <Button className="btn btn-primary" type="submit">
           Home
-        </button>
+        </Button>
       </Link>
     </div>
   );

@@ -14,7 +14,6 @@ function Read() {
   }, []);
 
   const setData = (id, fName, lName) => {
-    console.log(id);
     localStorage.setItem("ID", id);
     localStorage.setItem("firstName", fName);
     localStorage.setItem("lastName", lName);
@@ -36,7 +35,7 @@ function Read() {
   };
   return (
     <div>
-      <Table striped bordered hover className="table">
+      <Table className="table">
         <thead>
           <tr>
             <th>Id</th>
@@ -63,16 +62,21 @@ function Read() {
                   </Link>
                 </td>
                 <td>
-                  <Button onClick={() => onDelete(dat.id)}>Delete</Button>
+                  <Button
+                    onClick={() => onDelete(dat.id)}
+                    style={{ backgroundColor: "red" }}
+                  >
+                    Delete
+                  </Button>
                 </td>
               </tr>
             );
           })}
         </tbody>
         <Link to="/create">
-          <button class="btn btn-primary" type="submit" className="sub">
+          <Button class="btn btn-primary" type="submit">
             Create
-          </button>
+          </Button>
         </Link>
       </Table>
     </div>

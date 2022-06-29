@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 function Update() {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
@@ -36,13 +37,13 @@ function Update() {
         value={lname}
         onChange={(e) => setLname(e.target.value)}
       />
-      <button type="submit" className="sub" onClick={sendAPIdetails}>
+      <Button type="submit" className="sub" onClick={sendAPIdetails}>
         Update
-      </button>
+      </Button>
       <Link to="/read">
-        <button type="submit" className="sub">
+        <Button type="submit" className="sub">
           Home
-        </button>
+        </Button>
       </Link>
     </div>
   );

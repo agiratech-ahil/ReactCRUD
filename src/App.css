@@ -14,11 +14,12 @@
 }
 .sub {
   margin-top: 10px;
-  height: 30px;
+  height: 40px;
   border: none;
 }
 .table {
   margin-top: 25px;
+  text-align: center;
 }
 .btn {
   margin-top: 10px;
